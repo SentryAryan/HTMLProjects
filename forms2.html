@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <fieldset>
+        <legend>Form 1</legend>
+        
+        <h2>Event Registration</h2>
+        <form>
+        <label for="name">Name:</label>
+        <br>
+        <br>
+        <input type="text" name="name" id="name">
+        <br>
+
+        <label for="email">Email:</label>
+        <br>
+        <br>
+        <input type="email" name="email" id="email">
+        <br>
+
+        <label for="phone">Phone:</label>
+        <br>
+        <br>
+        <input type="tel" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7891">
+        <br>
+
+        <label for="dropdown">Occupation:</label>
+        <br>
+        <br>
+        <select name="dropdown" id="dropdown">
+            <option value="student">Student</option>
+            <option value="professional">Professional</option>
+            <option value="other">Other</option>
+        </select>
+        <br>
+        <br>
+
+        <fieldset>
+            <legend>Topics of interest:</legend>
+        <input type="checkbox" name="check" id="check1">
+        <br>
+        <label for="check1">HTML</label>
+        <br>
+        <br>
+        <input type="checkbox" name="check" id="check2">
+        <br>
+        <label for="check2">CSS</label>
+        <br>
+        <br>
+        <input type="checkbox" name="check" id="check3">
+        <br>
+        <label for="check3">JavaScript</label>
+        <br>
+        <br>
+    </fieldset>
+        <label for="textarea">Comments:</label>
+        <br>
+        <br>
+        <textarea name="comments" id="comments" cols="60" rows="5"></textarea>
+
+        <button>Register</button>
+    </form>
+    </fieldset>
+
+    <fieldset>
+        <legend>Form 2</legend>
+        
+        <h2>Job Application</h2>
+
+        <form>
+        <label for="name1">Name:</label>
+        <br>
+        <br>
+        <input type="text" name="name1" id="name1">
+        <br>
+
+        <label for="email1">Email:</label>
+        <br>
+        <br>
+        <input type="email" name="email1" id="email1">
+        <br>
+
+        <label for="phone1">Phone:</label>
+        <br>
+        <br>
+        <input type="tel" name="phone1" id="phone1" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7891">
+        <br>
+
+        <label for="file">Resume:</label>
+        <br>
+        <br>
+        <input type="file" name="file" id="file">
+        <br>
+
+        <label for="exp">Experience(years):</label>
+        <br>
+        <br>
+        <input type="number" name="exp" id="num" min="0" max="50">
+        <br>
+
+        <fieldset>
+            <legend>Skills:</legend>
+        <input type="checkbox" name="check" id="check1">
+        <br>
+        <label for="check1">HTML</label>
+        <br>
+        <br>
+        <input type="checkbox" name="check" id="check2">
+        <br>
+        <label for="check2">CSS</label>
+        <br>
+        <br>
+        <input type="checkbox" name="check" id="check3">
+        <br>
+        <label for="check3">JavaScript</label>
+        <br>
+        <br>
+    </fieldset>
+
+    <label for="degree">Highest Eductaion:</label>
+    <br>
+    <br>
+    <select name="degree" id="degree">
+        <option value="highSchool">High School</option>
+        <option value="12th">12th Equivalent</option>
+        <option value="undergraduate">Undergraduate</option>
+        <option value="postgraduate">Postgraduate</option>
+    </select>
+    <br>
+    <br>
+
+    <fieldset>
+        <legend>Availability:</legend>
+
+        <input type="radio" name="radiobutton" id="radiobutton1">
+        <br>
+        <label for="radiobutton1">Full-Time</label>
+        <br>
+        <br>
+
+        <input type="radio" name="radiobutton" id="radiobutton2">
+        <br>
+        <label for="radiobutton2">Part-Time</label>
+        <br>
+        <br>
+    </fieldset>
+    <br>
+    
+    <label for="additionalComments">Additional Comments:</label>
+    <br>
+    <textarea name="additionalComments" id="additionComments" cols="60" rows="5"></textarea>
+
+    <button>Submit Application</button>
+    </form>
+    </fieldset>
+
+    <fieldset>
+        <legend>Form 3</legend>
+        
+        <h2>Complex Form</h2>
+
+        <form>
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name">
+            <br>
+            <br>
+
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email">
+            <br>
+            <br>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+            <br>
+            <br>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" name="dob" id="dob">
+            <br>
+            <br>
+            
+            <p style="display: inline;">Gender:</p>
+            <input type="radio" name="gender" id="male">
+            <label for="male">male</label>
+            <input type="radio" name="gender" id="female">
+            <label for="female">female</label>
+            <br>
+            <br>
+            
+            <label for="country">Country:</label>
+            <select name="country" id="country">
+                <option value="default" selected disabled>--Choose a country--</option>
+                <option value="india">India</option>
+                <option value="usa">USA</option>
+                <option value="china">China</option>
+                <option value="france">France</option>
+                <option value="russia">Russia</option>
+            </select>
+        </fieldset>
+        <br>
+        <br>
+
+        <fieldset>
+            <legend>Address</legend>
+
+            <label for="street">Street:</label>
+            <input type="text" name="street" id="street">
+            <br>
+            <br>
+            
+            <label for="city">City:</label>
+            <input type="text" name="city" id="city">
+            <br>
+            <br>
+            
+            <label for="state">State:</label>
+            <input type="text" name="state" id="state">
+            <br>
+            <br>
+            
+            <label for="zipcode">ZipCode:</label>
+            <input type="text" name="zipcode" id="zipcode">
+        </fieldset>
+        <br>
+        <br>
+
+        <fieldset>
+            <legend>Other Information:</legend>
+
+            <label for="comments">Comments:</label>
+            <textarea name="comments" id="comments" cols="60" rows="5"></textarea>
+
+            <label for="agreement">I agree to the terms of service</label>
+            <input type="checkbox" name="agreement" id="agreement">
+        </fieldset>
+        <br>
+        
+        <button>Submit</button>
+    </form>
+    </fieldset>
+
+    <fieldset>
+        <legend>Form 4</legend>
+
+        <form>
+            <h2>Travel Reservation Form</h2>
+            <h3>* denotes mandatory</h3>
+
+            <label for="name">Full Name*:</label>
+            <br>
+            <input type="text" name="name" id="name" required>
+            <br>
+
+            <label for="email">Email address*:</label>
+            <br>
+            <input type="email" name="email" id="email" required>
+            <br>
+
+            <label for="tourPackage">Select Tour Package*:</label>
+            <br>
+            <select name="tourPackage" id="tourPackage" required>
+                <option value="" selected disabled>--Choose the package--</option>
+                <option value="goa">Goa</option>
+                <option value="j&k">Jammu and Kashmir</option>
+                <option value="rj">Rajashthan</option>
+                <option value="wb">West Bengal</option>
+                <option value="up">Uttar Pradesh</option>
+            </select>
+            <br>
+
+            <label for="date">Arrival Date*:</label>
+            <br>
+            <input type="date" name="date" id="date" required>
+            <br>
+
+            <label for="number">Number of persons*:</label>
+            <br>
+            <input type="number" name="number" id="number" required placeholder="UNKOWN_TYPE">
+            
+
+            <p>What would you want to avail*?</p>
+            <label for="boarding">Boarding</label>
+            <input type="checkbox" name="boarding" id="boarding">
+            <br>
+
+            <label for="fooding">Fooding</label>
+            <input type="checkbox" name="fooding" id="fooding">
+            <br>
+
+            <label for="ss">Sight Seeing</label>
+            <input type="checkbox" name="ss" id="ss">
+            <br>
+
+            <label for="name">Discount Coupon Code:</label>
+            <br>
+            <input type="text" name="name" id="name" placeholder="UNKNOWN_TYPE">
+            <br>
+
+            <p>Terms and conditions*:</p>
+            
+            <input type="radio" name="radio" id="agree">
+            <label for="agree">I agree</label>
+
+            <input type="radio" name="radio" id="disAgree">
+            <label for="dontAgree">I disagree</label>
+            <br>
+
+            <button>Complete Reservation</button>
+        </form>
+    </fieldset>
+
+    <fieldset>
+        <legend>Form 5</legend>
+
+        <form >
+            <h2>My feedback form</h2>
+
+            <ul>
+            <li>
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name">
+                <br>
+            </li>
+            
+            <li>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email">
+                <br>
+            </li>
+            
+            <li>
+                <label for="password">Password:</label>
+                <input type="password" name="password" id="password">
+                <br>
+            </li>
+            
+            <li>
+                <p>Please check all the emotions that apply to you:</p>
+                <ul>
+                    <li>
+                        <label for="angry">Angry</label>
+                        <input type="checkbox" name="angry" id="angry">
+                    </li>
+                    <li>
+                        <label for="sad">Sad</label>
+                        <input type="checkbox" name="sad" id="sad">
+                    </li>
+                    <li>
+                        <label for="happy">Happy</label>
+                        <input type="checkbox" name="happy" id="happy">
+                    </li>
+                    <li>
+                        <label for="ambivient">Ambivient</label>
+                        <input type="checkbox" name="ambivient" id="ambivient">
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p>How happy were you with our service?</p>
+                <ul>
+                    <li>
+                        <label for="angry">Very Satisfied</label>
+                        <input type="checkbox" name="angry" id="angry">
+                    </li>
+                    <li>
+                        <label for="sad">Satisfied</label>
+                        <input type="checkbox" name="sad" id="sad">
+                    </li>
+                    <li>
+                        <label for="happy">Didn't care</label>
+                        <input type="checkbox" name="happy" id="happy">
+                    </li>
+                    <li>
+                        <label for="ambivient">Dissatisfied</label>
+                        <input type="checkbox" name="ambivient" id="ambivient">
+                    </li>
+                    <li>
+                        <label for="ambivient">Very dissatisfied</label>
+                        <input type="checkbox" name="ambivient" id="ambivient">
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <label for="comments">Further Comments:</label>
+                <br>
+                <textarea name="comments" id="comments" cols="60" rows="5"></textarea>
+            </li>
+            <li>
+                <label for="photo">Bio photo:</label>
+                <input type="text">
+                <input type="file" name="photo" id="photo">
+            </li>
+            <li>
+                <label for="location">Locati visited:</label>
+                <select name="locaton" id="location">
+                    <option value="selectLocation" selected disabled>--Select Location--</option>
+                    <option value="lucknow">Lucknow</option>
+                    <option value="kolkata">Kolkata</option>
+                    <option value="mumbai">Mumbai</option>
+                    <option value="delhi">Delhi</option>
+                </select>
+            </li>
+            <li>
+                <button>submit</button>
+            </li>
+            </ul>
+        </form>
+    </fieldset>
+</body>
+</html>
